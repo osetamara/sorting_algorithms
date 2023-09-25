@@ -33,7 +33,7 @@ void bubble_sort(int *array, size_t size)
 	{
 		bubbly = true;
 		/*Iterate through the array and compare adjacent elements.*/
-		for (i = 0; r < len - 1; r++)
+		for (r = 0; r < len - 1; r++)
 		{
 			/*If the current element is greater than the next element, swap them.*/
 			if (array[r] > array[r + 1])
@@ -45,7 +45,6 @@ void bubble_sort(int *array, size_t size)
 				bubbly = false;
 			}
 		}
-		/*Decrease the length of the array to exclude the last element (largest).*/
 		len--;
 	}
 }
